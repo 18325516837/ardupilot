@@ -155,6 +155,9 @@ Copter::Mode *Copter::mode_from_mode_num(const uint8_t mode)
             break;
 #endif
 
+        case DRSTAR:
+            ret = &Mode_DrStar;
+            break;
         default:
             break;
     }
